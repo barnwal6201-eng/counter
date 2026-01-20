@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+   
+    <style>
+        .counterbody{
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .tittle{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px 20px 20px 20px;
+        }
+        #countervalue{
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 20px;
+        }
+        .controls{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 2px;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+        #decrement{
+            color: white;
+            font-weight: 900;
+            background-color: rgb(10 125 220);
+            border-radius: 7px;
+            border-color: white;
+            height: 60px;
+            width: 55px;
+            align-items: center;
+        }
+         #increment{
+            color: white;
+            font-weight: 900;
+            background-color: rgb(10 125 220);
+            border-radius: 7px;
+            border-color: white;
+            height: 60px;
+            width: 55px;
+            align-items: center;
+        }
+        .Bychange{
+            text-align: center;
+            line-height: 2px;
+            font-size: larger;
+            margin-top: 33px;
+        }
+        input{
+            line-height: 19px;
+        }
+        .reset{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn1{
+            background-color: rgb(10 125 220);
+             color: white;
+             border-radius: 7px;
+             border-color: white;
+             height: 51px;
+             width: 108px;
+             font-weight: 900;
+             font-family: sans-serifs;
+        }
+        .keyboard_instructions{
+            text-align: center;
+            font-family: sans-serif;
+            line-height: normal;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="counterbody">
+    <h1 class="tittle">Counter</h1>
+
+    <hr>
+
+    <div class="value" id="countervalue">
+        0
+    </div>
+    
+    <div class="controls" id="countcontrol">
+        <button id="decrement">-
+            </button>
+
+            <button id="increment">+
+            </button>
+    </div>
+
+      <div class="Bychange" id="bychange">
+        <label for="changeby">Increment / Decrement by :</label>
+         <input type="number" name="change" id="changeby" min="0" max="10" value="1">
+      </div>
+     
+      <div class="reset">
+        <button class="btn1" id="reset">Reset</button>
+      </div>
+
+      <div class="keyboard_instructions">
+        <p>
+               Keyboard shortcuts: + to increment, - to decrement,
+         <span style="color: #777; font-family: 'Courier New', Courier, monospace;">Page Up/Down</span>  to change step value
+        </p>
+      </div>
+
+    </div>
+
+     <script src="index.js"></script>
+</body>
+</html>
