@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+<body>
+    <div class="counterbody">
+    <h1 class="tittle">Counter</h1>
+
+    <hr>
+
+    <div class="value" id="countervalue">
+        0
+    </div>
+    
+    <div class="controls" id="countcontrol">
+        <button id="decrement">-
+            </button>
+
+            <button id="increment">+
+            </button>
+    </div>
+
+      <div class="Bychange" id="bychange">
+        <label for="changeby">Increment / Decrement by :</label>
+         <input type="number" name="change" id="changeby" min="0" max="10" value="1">
+      </div>
+     
+      <div class="reset">
+        <button class="btn1" id="reset">Reset</button>
+      </div>
+
+      <div class="keyboard_instructions">
+        <p>
+               Keyboard shortcuts: + to increment, - to decrement,
+         <span style="color: #777; font-family: 'Courier New', Courier, monospace;">Page Up/Down</span>  to change step value
+        </p>
+      </div>
+
+    </div>
+
+     <script src="index.js"></script>
+</body>
+</html>
