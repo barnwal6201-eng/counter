@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+input{
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
