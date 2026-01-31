@@ -11,7 +11,7 @@ for(let row = 0; row < inputNum; row++){
     const rowDiv = document.createElement("div");
     rowDiv.className = "row";
     container.appendChild(rowDiv);
-    console.log("lalita")
+    
     //for column
     for(let col = 0; col < inputNum; col++){
     const div = document.createElement("div");
@@ -35,6 +35,7 @@ for(let row = 0; row < inputNum; row++){
 };
 
 });
+
 
 
 
