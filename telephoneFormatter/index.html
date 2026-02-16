@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        .container{
+            text-align: center;
+            margin-top: 35px;
+        }
+        label{
+            margin-right: 146px;
+            font-weight: 800;
+            font-size: 20px;
+            display: block;
+        }
+        input#telenumber{
+            padding: 8px 112px 11px 22px ;
+            margin: 8px -41px 15px 0px;
+            line-height: 2;
+        }
+        .hint{
+            color: rgb(127, 125, 125);
+        }
+    </style>
+</head>
+<body>
+    <h2>Telephone Formatter</h2>
+    <hr>
+    <div class="container">
+        <label for="telenumber">Phone Number</label>
+        <div id="number-wrap">
+        <input type="tel" name="number" id="telenumber" placeholder="+(123)456 - 7890" maxlength="16" class="">
+        <span class="input-suffix">📞</span>
+        </div>
+        <div id="phone-format" class="hint">
+            Enter a 10-digit phone number. Format: +(123) 456-7890
+          </div>
+
+          <div id="alert-message" style="color: red; margin-top: 8px; display: none;">Please enter a valid 10-digit phone number</div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

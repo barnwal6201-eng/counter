@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .container{
+            text-align: center;
+            margin: 23px 16px 18px 16px;
+        }
+        input{
+            text-align: left;
+            height: 31px;
+            width: 207px;
+            color: black;
+            font-weight: 800;
+        }
+        .output{
+            margin-top: 52px;
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: large;
+        }
+        .baseStyle{
+            margin-left: .5rem;
+            color: #fff;
+            font-size: 1rem;
+            background: #fff;
+            border: none;
+             cursor: pointer;
+        }
+        .dotRemove{
+            list-style-type: none;
+        }
+        .inputStyle{
+            height: 30px;
+            width: fit-content;
+            border: none;
+            margin: 11px -111px -6px 18px;
+            background-color: white;
+        }
+        .message{
+            text-align: center;
+            color: rgb(224, 52, 52);
+            display: block;
+            margin-top: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <hr>
+    <div class="container">
+    <input type="text" name="todolist" id="tocreate-list" placeholder="Items">
+
+    <div class="message">Oops you have no lists created !!!</div>
+    <ul id="output" class="output">
+
+    </ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
